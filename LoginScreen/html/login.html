@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="tr"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="sparrow-mta topluluğu için alazul tarafından geliştirilmiştir.">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Sparrow-mta - alazul</title>
+    <link rel="stylesheet" href="alazul.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="alazul.js" defer=""></script>
+    <meta name="generator" content="Alazul 1.0.0, sparrow-mta.blogspot.com">
+    <meta property="og:title" content="Sparrow-mta - alazul">
+    <meta property="og:description" content="sparrow-mta topluluğu için alazul tarafından geliştirilmiştir.">
+    <meta property="og:image" content="static/SparroWMTA-Scriptleri.png">
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+		<script>
+			
+			function closeAlert() {
+				document.getElementById("alert").innerHTML = "";
+			}
+			
+			function login() {
+				var username = document.getElementById("loginUser").value;
+				var password = document.getElementById("loginPass").value;
+				var checksave = document.getElementById("loginSave").checked;
+				mta.triggerEvent("submitLogin", username, password, checksave);
+			}
+			
+			function register() {
+				var username = document.getElementById("registerUser").value;
+				var password = document.getElementById("registerPass").value;
+				var repassword = document.getElementById("registerRepeatPass").value;
+				mta.triggerEvent("submitRegister", username, password, repassword);
+			}
+			
+			function showPass() {
+				var inputpass = document.getElementById("loginPass");
+				var eyeimg = document.getElementsByClassName("show-password")[0];
+				if (inputpass.type === "password") {
+					inputpass.type = "text";
+					eyeimg.src = "static/fa-eye-slash.svg";
+				} else {
+					inputpass.type = "password";
+					eyeimg.src = "static/fa-eye.svg";
+				}
+			}
+		</script>
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Alazul login screen"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:type" content="website">
+  </head>
+  <body developer="alazul" description="sparrow-mta topluluğu için geliştirilmiştir." class="u-body u-xl-mode"><header class="u-align-left u-clearfix u-custom-color-1 u-header u-sticky u-sticky-55d9 u-header" id="sec-3f84"><div class="u-align-left u-expanded-height u-left-0 u-uploaded-video u-video u-video-cover u-video-1">
+		<div class="embed-responsive">
+			<video class="embed-responsive-item" data-autoplay="1" loop="" muted="" poster="static/alazulpp.jpg" autoplay="autoplay" playsinline="">
+			<source src="files/video.webm" type="video/webm">
+			<p>Tarayıcınız webm formatını desteklemiyor.</p>
+			</video>
+		</div>
+	</div><div class="left-bar u-container-style u-group u-white u-group-1">
+		<div class="u-container-layout u-container-layout-1">
+			<img class="u-image u-image-default u-preserve-proportions u-image-1" src="static/sparrow.png" alt="" data-image-width="48" data-image-height="48">
+			<h3 class="u-text u-text-default u-text-1">
+			<span style="font-weight: 700;">GİRİŞ YAP</span>
+			</h3>
+					
+		<div id="alert"></div>
+					
+		<div class="u-form u-form-1">
+		<div class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;">
+				<div class="u-form-group u-form-name u-label-none u-form-group-1">
+				<label for="loginUser" class="u-label"></label>
+				<input id="loginUser" type="text" placeholder="Kullanıcı adı" class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+				</div>
+			<div class="u-form-password u-form-group u-label-none u-form-group-2">
+				<label for="loginPass" class="u-label"></label>
+				<input id="loginPass" type="password" placeholder="Şifre" class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+				</div>
+			<div class="u-form-check u-form group u-label-none u-form-group-3">
+				<input id="loginSave" type="checkbox" class="check">
+				<label for="loginSave"><span class="icon"></span> Bilgileri Kayıt Et</label>
+			</div>
+				<div class="u-align-right u-form-group u-form-submit u-form-group-4">
+				<input type="submit" class="u-form-control-hidden" value="" onclick="login()">
+				</div>
+			</form>
+		</div>
+			<h4 class="u-text u-text-default u-text-2">Hesap oluştur</h4>
+			<h6 class="u-text u-text-default u-text-palette-5-dark-1 u-text-3">v1.0.0</h6>
+		</div>
+	</div></header>
+</body></html>

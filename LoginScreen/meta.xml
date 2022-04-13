@@ -1,0 +1,16 @@
+<meta>
+	<info author="Alazul" type="script" version="1.0.0" name="Sparrow-Mta - Alazul Login panel" />
+	
+	<script src="login_client.lua" type="client" cache="false" />
+	<script src="login_server.lua" type="server" />
+	
+	<!-- html -->
+	<file src="html/login.html" />
+	<file src="html/files/video.webm" />
+	<file src="html/images/alazulpp.jpg" />
+	<file src="html/images/sparrow.png" />
+	<file src="html/alazul.css" />
+	<file src="html/alazul.js" />
+	<file src="html/jquery.js" />
+</meta>
+	
