@@ -1,4 +1,4 @@
 # sparrow - mta sa login screen
-It supports mta sa webm video file format.
+Please use webm format for video.
 
 ![alt screenshot](https://github.com/ala-zul/sparrow-login-screen/blob/main/Screenshot/loginscreen.jpg?raw=true)
