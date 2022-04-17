@@ -1,3 +1,11 @@
+    <!-- Project: Multi theft auto Sparrow Login screen script -->
+    <!-- Developer: Alazul -->
+    <!-- Version: 1.0.0 -->
+    <!-- Stable version: 1.0.0 -->
+    <!-- Date: 17.04.2022 -->
+    <!-- Community: https://sparrow-mta.blogspot.com -->
+
+	
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="tr"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,51 +56,94 @@
 			}
 		</script>
     
-    <script type="application/ld+json">{
+	<script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Alazul login screen"
 }</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:type" content="website">
+		<meta name="theme-color" content="#478ac9">
+		<meta property="og:type" content="website">
   </head>
-  <body developer="alazul" description="sparrow-mta topluluğu için geliştirilmiştir." class="u-body u-xl-mode"><header class="u-align-left u-clearfix u-custom-color-1 u-header u-sticky u-sticky-55d9 u-header" id="sec-3f84"><div class="u-align-left u-expanded-height u-left-0 u-uploaded-video u-video u-video-cover u-video-1">
-		<div class="embed-responsive">
-			<video class="embed-responsive-item" data-autoplay="1" loop="" muted="" poster="static/alazulpp.jpg" autoplay="autoplay" playsinline="">
-			<source src="files/video.webm" type="video/webm">
-			<p>Tarayıcınız webm formatını desteklemiyor.</p>
-			</video>
-		</div>
-	</div><div class="left-bar u-container-style u-group u-white u-group-1">
-		<div class="u-container-layout u-container-layout-1">
-			<img class="u-image u-image-default u-preserve-proportions u-image-1" src="static/sparrow.png" alt="" data-image-width="48" data-image-height="48">
-			<h3 class="u-text u-text-default u-text-1">
-			<span style="font-weight: 700;">GİRİŞ YAP</span>
-			</h3>
+		<body developer="alazul" description="sparrow-mta topluluğu için geliştirilmiştir." class="u-body u-xl-mode">
+			<header class="u-align-left u-clearfix u-custom-color-1 u-header u-sticky u-sticky-55d9 u-header" id="sec-3f84">
+			<div class="u-align-left u-expanded-height u-left-0 u-uploaded-video u-video u-video-cover u-video-1">
 					
-		<div id="alert"></div>
+			<!-- video -->
+			<!-- multi theft auto supports webm video format. -->
+			<!-- multi theft auto webm video formatını destekler. -->
 					
-		<div class="u-form u-form-1">
-		<div class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;">
-				<div class="u-form-group u-form-name u-label-none u-form-group-1">
+			<div class="embed-responsive">
+				<video class="embed-responsive-item" data-autoplay="1" loop="" muted="" poster="static/alazulpp.jpg" autoplay="autoplay" playsinline="">
+				<source src="files/video.webm" type="video/webm">
+				<p>Your browser does not support the webm format.</p>
+				</video>
+			</div>
+			</div>
+			<div class="left-bar u-container-style u-group u-white u-group-1">
+				<div class="u-container-layout u-container-layout-1">
+				<img class="u-image u-image-default u-preserve-proportions u-image-1" src="static/sparrow.png" alt="" data-image-width="48" data-image-height="48">
+				<h3 class="u-text u-text-default u-text-1">
+				<span style="font-weight: 700;">Giriş yap</span>
+				</h3>
+					
+			<!-- log in -->
+					
+			<div class="u-form u-form-1">
+			<div class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;">
+			<div class="u-form-group u-form-name u-label-none u-form-group-1">
 				<label for="loginUser" class="u-label"></label>
 				<input id="loginUser" type="text" placeholder="Kullanıcı adı" class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
-				</div>
+			</div>
 			<div class="u-form-password u-form-group u-label-none u-form-group-2">
 				<label for="loginPass" class="u-label"></label>
 				<input id="loginPass" type="password" placeholder="Şifre" class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
-				</div>
+			</div>
+			
+		<div id="alert"></div>
+			
 			<div class="u-form-check u-form group u-label-none u-form-group-3">
 				<input id="loginSave" type="checkbox" class="check">
-				<label for="loginSave"><span class="icon"></span> Bilgileri Kayıt Et</label>
+				<label for="loginSave"><span class="icon"></span> HATIRLA</label>
 			</div>
-				<div class="u-align-right u-form-group u-form-submit u-form-group-4">
+			<div class="u-align-right u-form-group u-form-submit u-form-group-4">
 				<input type="submit" class="u-form-control-hidden" value="" onclick="login()">
+			</div>
+		</div>
+					
+			<!-- popup -->
+					
+		<div class="container">
+		<div class="u-popup-box">
+				<a class="close-button popup-close" title="close">×</a>
+				<h2>KAYIT OL</h2>
+					
+			<!-- register -->
+					
+			<div class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;">
+			<div class="u-form-group u-form-name u-label-none u-form-group-1">
+				<label for="registerUser" class="u-label"></label>
+				<input id="registerUser" type="text" placeholder="Kullanıcı adı" class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+			</div>
+			<div class="u-form-password u-form-group u-label-none u-form-group-2">
+				<label for="registerPass" class="u-label"></label>
+				<input id="registerPass" type="password" placeholder="Şifre" class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+			</div>
+			<div class="u-form-password u-form-group u-label-none u-form-group-2">
+				<label for="registerRepeatPass" class="u-label"></label>
+				<input id="registerRepeatPass" type="password" placeholder="Şifre tekrar" class="u-border-1 u-border-grey-30 u-input u-input-rectangle">
+			</div>
+			<div class="u-align-right u-form-group u-form-submit u-form-group-4">
+				<input type="submit" class="u-form-control-hidden" value="" onclick="register()">
+			</div>
+			</div>
+		</div>
+		</div>
+				<a class="u-button u-button-default button">Hesap oluştur</a>
+				<h6 class="u-text u-text-default u-text-palette-5-dark-1 u-text-3">v1.0.0</h6>
+		</div>
 				</div>
-			</form>
-		</div>
-			<h4 class="u-text u-text-default u-text-2">Hesap oluştur</h4>
-			<h6 class="u-text u-text-default u-text-palette-5-dark-1 u-text-3">v1.0.0</h6>
-		</div>
-	</div></header>
+			</header>
+
+<script>const container = document.querySelector(".container");const button = document.querySelector(".button");const closeButton = document.querySelector(".close-button");function togglecontainer() {container.classList.toggle("show-container");}function windowOnClick(event) {if (event.target === container) {togglecontainer();}}button.addEventListener("click", togglecontainer);closeButton.addEventListener("click", togglecontainer);window.addEventListener("click", windowOnClick);</script>
+
 </body></html>
